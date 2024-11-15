@@ -8,6 +8,7 @@
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    z-index: 1001; /* 确保按钮在导航容器之上 */
 }
 
 /* 导航容器样式 */
@@ -23,7 +24,7 @@
 
 /* 导航项样式 */
 .nav-item {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(70, 130, 180, 0.8); /* 颜色相近的蓝色 */
     margin: 10px 0;
     padding: 15px 20px;
     border-radius: 10px; /* 圆角 */
@@ -31,7 +32,7 @@
     cursor: pointer;
     transition: transform 0.5s ease, opacity 0.5s ease; /* 平滑过渡 */
     opacity: 0;
-    transform: translateX(-50px); /* 初始偏移 */
+    transform: translateX(-50px) skew(-20deg); /* 初始偏移和倾斜 */
 }
 
 /* 激活状态 */
@@ -41,7 +42,7 @@
 
 #nav-container.active .nav-item {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0) skew(-20deg); /* 保持倾斜 */
 }
 
 /* 延迟效果 */
@@ -55,4 +56,16 @@
 
 .nav-item:nth-child(3) {
     transition-delay: 0.3s;
+}
+
+/* 收起菜单按钮样式 */
+#close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff;
 }
