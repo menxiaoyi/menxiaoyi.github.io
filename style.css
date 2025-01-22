@@ -7,17 +7,20 @@ header {
     height: 100px;
     width: 100%;
 }
-h1{
+.biao h1{
     position: absolute;
     left: 150px;
     top: 30px;
 
 }
 img{
-    left:3vw;
-    width:5%;
+    position: absolute;
+    left:35px;
+    width:85px;
+    top: 9px;
+    border-radius: 10px ;
 }
-h1{
+.biao h1{
     color: #f8dba3;
 
 }
@@ -36,15 +39,43 @@ header ul{
     position: absolute;
     right:5vw;
     top:0;
-    line-height: 80px;
+    line-height: 90px;
+    font-size: 20px;
 
+
+}
+header ul li{
+    border: 1px solid #f3f3f3;
+    padding: 10px 20px;
+    border-radius: 10px;
 }
 .hero{
     background-color: #fff787;
-    color: #9eec3d;
-    height:100vh;
+    color: #a8fb3e;
+    height:95vh;
     background-image: url("image/venti.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero h1{
+font-size: 50px;
+    margin: 25px 0;
+}
+.hero h2{
+    font-size: 30px;
+    margin: 25px 0;
+}
+footer{
+    background-color: #57f4d1;
+    color: #a8fb3e;
+    height:5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
