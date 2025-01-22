@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header {
+    background-color: #6aeaf1;
+    height: 100px;
+    width: 100%;
+}
+h1{
+    position: absolute;
+    left: 150px;
+    top: 30px;
+
+}
+img{
+    left:3vw;
+    width:5%;
+}
+h1{
+    color: #f8dba3;
+
+}
+header a{
+    color: #f8dba3;
+    text-decoration: none;
+}
+header a:hover{
+    text-decoration: underline;
+}
+header li{
+    display: inline;
+    margin: 2vw;
+}
+header ul{
+    position: absolute;
+    right:5vw;
+    top:0;
+    line-height: 80px;
+
+}
+.hero{
+    background-color: #fff787;
+    color: #9eec3d;
+    height:100vh;
+    background-image: url("image/venti.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
