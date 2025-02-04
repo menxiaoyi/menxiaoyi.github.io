@@ -5,6 +5,7 @@
 }
 function forget() {
     // 显示确认对话框
-    var userConfirmed = confirm("woc补嚎!我也忘了!");
+
+    var userConfirm = confirm("woc补嚎!我也忘了!");
 
 }

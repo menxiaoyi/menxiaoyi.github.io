@@ -2,26 +2,24 @@
     padding: 0;
     margin: 0;
 }
-header {
-    background-color: #6aeaf1;
-    height: 100px;
-    width: 100%;
-}
+
 .biao h1{
     position: absolute;
     left: 150px;
     top: 30px;
 
 }
-img{
+img {
     position: absolute;
     left:35px;
     width:85px;
     top: 9px;
     border-radius: 10px ;
+    z-index: 2;
 }
 .biao h1{
     color: #f8dba3;
+    z-index: 2;
 
 }
 header a{
@@ -34,13 +32,16 @@ header a:hover{
 header li{
     display: inline;
     margin: 2vw;
+    
 }
 header ul{
+    z-index: 2;
     position: absolute;
     right:5vw;
     top:0;
     line-height: 90px;
     font-size: 20px;
+
 
 
 }
@@ -50,10 +51,12 @@ header ul li{
     border-radius: 10px;
 }
 .hero{
-    background-color: #fff787;
-    color: #a8fb3e;
-    height:95vh;
-    background-image: url("image/venti.png");
+
+
+    color: #faf37a;
+    height:100vh;
+    background-image: url("image/back.jpg");
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -62,6 +65,8 @@ header ul li{
     justify-content: center;
     align-items: center;
 }
+
+
 .hero h1{
 font-size: 50px;
     margin: 25px 0;
