@@ -1,51 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>小乙Team - 创新技术社区</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-
     <header>
-
-        <img src="image/ying.png" alt="logo">
+        <img src="image/paimeng.jpg" alt="logo" class="logo-img">
         <section class="biao">
             <h1>小乙Team</h1>
         </section>
-
-
         <nav>
-    <ul>
-        <li><a href="/index.html">首页</a></li>
-        <li><a href="#">视频教程</a></li>
-        <li><a href="#">软件下载</a></li>
-        <li><a href="#" onclick="showPrompt()">联系我们</a></li>
-        <li><a href="#">关于我们</a></li>
-        <li><a href="login.html">登录</a></li>
-    </ul>
+            <ul>
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="tutorials.html">视频教程</a></li>
+                <li><a href="tools.html">工具推荐</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="login.html" class="login-btn">登录</a></li>
+            </ul>
         </nav>
     </header>
 
-<main>
-    <section class="hero">
-        <h1>欢迎来到小乙team</h1>
-        <h2>感谢你愿意进入此网站</h2>
-        <h2>团队主要学习计算机,编程,主要语言是c#,如果做游戏则会用到unity引擎</h2>
-        <h2>我们会在这个网站上分享一些好的资源,教程,以及自己制作的作品,分享的东西尽量免费</h2>
-        <h3>如果我们发现了一些很棒的教程,比如bilibili的视频,会放在"视频教程"栏目</h3>
-        <h2>计算机学习上,团队主张自学,毕竟没时间跟老师走</h2>
-        <h2>学业问题,可能网站更新很慢,因为只有一两个人在做</h2>
-        <h2>欢迎任何人与我们一起学习讨论,分享资源</h2>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="animate-text">欢迎来到小乙Team的奇妙世界</h1>
+                <h2 class="animate-text-delay">和我们一起玩转编程</h2>
+                <p class="hero-description animate-text-delay">在这里，编程不再枯燥，让我们一起创造属于自己的精彩！</p>
+                <div class="hero-buttons">
+                    <a href="#featured-projects" class="btn primary-btn">一起来玩</a>
+                    <a href="contact.html" class="btn secondary-btn">加入我们</a>
+                </div>
+            </div>
+        </section>
 
-    </section>
+        <section id="featured-projects" class="featured-section">
+            <div class="container">
+                <h2 class="section-title">最近动态</h2>
+                <p class="section-subtitle">看看我们在做些什么好玩的事情</p>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <i class="fas fa-gamepad"></i>
+                        <h3>趣味小游戏</h3>
+                        <p>一起来制作有趣的小游戏吧</p>
+                        <a href="#" class="card-link">去看看 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="project-card">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>创意工坊</h3>
+                        <p>用代码画出精彩的世界</p>
+                        <a href="#" class="card-link">去看看 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="project-card">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <h3>编程小课堂</h3>
+                        <p>轻松学习编程基础</p>
+                        <a href="#" class="card-link">去看看 <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-</main>
+        <section class="tech-stack-section">
+            <div class="container">
+                <h2 class="section-title">一起来玩</h2>
+                <p class="section-subtitle">和小伙伴们一起创造有趣的东西</p>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <i class="fas fa-users"></i>
+                        <span>交朋友</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>想点子</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-code"></i>
+                        <span>写代码</span>
+                    </div>
+                    <div class="tech-item">
+                        <i class="fas fa-star"></i>
+                        <span>玩游戏</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<footer>
-    <a href="https://icp.gov.moe/?keyword=20255090" target="_blank">萌ICP备20255090号</a>
-</footer>
-<script src="script.js"></script>
+        <section class="community-section">
+            <div class="container">
+                <h2 class="section-title">加入我们</h2>
+                <p class="section-subtitle">成为小乙Team的一员，一起玩转编程</p>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <i class="fas fa-heart"></i>
+                        <h3>交朋友</h3>
+                        <p>认识志同道合的小伙伴</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-magic"></i>
+                        <h3>做好玩的</h3>
+                        <p>把想法变成现实</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-smile"></i>
+                        <h3>开心学习</h3>
+                        <p>轻松愉快地学编程</p>
+                    </div>
+                </div>
+                <div class="cta-container">
+                    <a href="contact.html" class="btn primary-btn">立即加入</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-weixin"></i></a>
+            </div>
+            <p class="copyright">
+                <a href="https://icp.gov.moe/?keyword=20255090" target="_blank">萌ICP备20255090号</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工具推荐 - 小乙Team</title>
+    <link rel="stylesheet" href="tutorials.css">
+    <style>
+        /* 工具推荐页面特定样式 */
+        .tool-item {
+            display: flex;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+        
+        .tool-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        
+        .tool-icon {
+            width: 80px;
+            height: 80px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .tool-content {
+            flex: 1;
+            padding: 20px;
+        }
+        
+        .tool-meta {
+            display: flex;
+            gap: 15px;
+            margin: 10px 0;
+        }
+        
+        .tool-meta span {
+            background: #f0f4f8;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #4a6fa5;
+        }
+        
+        .tool-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 8px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn.secondary {
+            background: #f0f4f8;
+            color: #4a6fa5;
+        }
+        
+        .btn.secondary:hover {
+            background: #e1e8f0;
+            box-shadow: 0 5px 15px rgba(74, 111, 165, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="image/paimeng.jpg" alt="logo">
+        <section class="biao">
+            <h1>小乙Team</h1>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="tutorials.html">视频教程</a></li>
+                <li><a href="tools.html">工具推荐</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="login.html">登录</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>工具推荐</h1>
+            <h2>优质开发工具与资源</h2>
+        </section>
+
+        <section class="tutorial-section">
+            <div class="container">
+                <div class="platform-group">
+                    <h2>代码编辑器</h2>
+                    <div class="tutorial-list">
+                        <article class="tool-item">
+                            <svg class="tech-icon"><use xlink:href="image/tech-icons.svg#vscode"/></svg>
+                            <div class="tool-content">
+                                <h3>Visual Studio Code</h3>
+                                <p>微软开发的轻量级代码编辑器，支持多种编程语言和丰富的插件生态系统，是前端开发的首选工具。</p>
+                                <div class="tool-meta">
+                                    <span>免费开源</span>
+                                    <span>跨平台</span>
+                                </div>
+                                <div class="tool-links">
+                                    <a href="https://code.visualstudio.com/download" target="_blank" class="btn">下载</a>
+                                    <a href="https://code.visualstudio.com/" target="_blank" class="btn secondary">官方网站</a>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="tool-item">
+                            <svg class="tech-icon"><use xlink:href="image/tech-icons.svg#vs"/></svg>
+                            <div class="tool-content">
+                                <h3>Visual Studio</h3>
+                                <p>微软的集成开发环境(IDE)，提供强大的调试和开发工具，特别适合.NET和C#开发。</p>
+                                <div class="tool-meta">
+                                    <span>社区版免费</span>
+                                    <span>Windows/Mac</span>
+                                </div>
+                                <div class="tool-links">
+                                    <a href="https://visualstudio.microsoft.com/downloads/" target="_blank" class="btn">下载</a>
+                                    <a href="https://visualstudio.microsoft.com/" target="_blank" class="btn secondary">官方网站</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="platform-group">
+                    <h2>IDE工具</h2>
+                    <div class="tutorial-list">
+                        <article class="tool-item">
+                            <svg class="tech-icon"><use xlink:href="image/tech-icons.svg#rider"/></svg>
+                            <div class="tool-content">
+                                <h3>JetBrains Rider</h3>
+                                <p>JetBrains开发的跨平台.NET IDE，提供智能代码补全、重构工具和Unity游戏开发支持。</p>
+                                <div class="tool-meta">
+                                    <span>付费</span>
+                                    <span>跨平台</span>
+                                </div>
+                                <div class="tool-links">
+                                    <a href="https://www.jetbrains.com/rider/download/" target="_blank" class="btn">下载</a>
+                                    <a href="https://www.jetbrains.com/rider/" target="_blank" class="btn secondary">官方网站</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="platform-group">
+                    <h2>版本控制</h2>
+                    <div class="tutorial-list">
+                        <article class="tool-item">
+                            <svg class="tech-icon"><use xlink:href="image/tech-icons.svg#github"/></svg>
+                            <div class="tool-content">
+                                <h3>GitHub</h3>
+                                <p>全球最大的代码托管平台，提供Git版本控制、项目管理和协作功能，是开源项目的首选平台。</p>
+                                <div class="tool-meta">
+                                    <span>免费</span>
+                                    <span>在线服务</span>
+                                </div>
+                                <div class="tool-links">
+                                    <a href="https://github.com/signup" target="_blank" class="btn">注册</a>
+                                    <a href="https://github.com/" target="_blank" class="btn secondary">访问网站</a>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="tool-item">
+                            <svg class="tech-icon"><use xlink:href="image/tech-icons.svg#git"/></svg>
+                            <div class="tool-content">
+                                <h3>Git</h3>
+                                <p>分布式版本控制系统，用于跟踪文件更改，协调多人协作开发，是现代软件开发的基础工具。</p>
+                                <div class="tool-meta">
+                                    <span>免费开源</span>
+                                    <span>跨平台</span>
+                                </div>
+                                <div class="tool-links">
+                                    <a href="https://git-scm.com/downloads" target="_blank" class="btn">下载</a>
+                                    <a href="https://git-scm.com/" target="_blank" class="btn secondary">官方网站</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="https://icp.gov.moe/?keyword=20255090" target="_blank">萌ICP备20255090号</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
